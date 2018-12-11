@@ -1,0 +1,24 @@
+<div id="wrapper">
+  <h1>Rate my Cakes</h1>
+  <div id="topside">
+    <div id="cakeCreate">
+      <h3>Submit a cake to be rated</h3>
+      <form (submit)="createNewCake()">
+        <p>Baker's name</p>
+        <input type="text" name="newCake.baker" [(ngModel)]="newCake.baker">
+        <p>Cake's name</p>
+        <input type="text" name="newCake.name"[(ngModel)]="newCake.name">
+        <p>Image url:</p>
+        <input type="url" name="newCake.url" [(ngModel)]="newCake.url">
+        <input type="submit" value="Submit">
+      </form>
+    </div><!--end of cake create-->
+    <div id="allCakes">
+    <app-cake-comment class="cake" *ngFor="let cake of allCakes" [cake]='cake' (onSelect)="showCake($event)">
+
+    </app-cake-comment>
+        
+    </div><!--end of all cake div-->
+  </div><!--topside end-->
+  <app-current-cake *ngIf='currentCake' [cakeToShow]='currentCake'></app-current-cake>
+</div><!--wrapper end-->

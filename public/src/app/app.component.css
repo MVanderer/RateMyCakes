@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+#wrapper {
+    max-width: 900px;
+    margin:auto;
+    background-color: grey;
+    padding:20px;
+}
+
+#cakeCreate, #allCakes {
+    display:inline-block;
+}
+
+#cakeCreate{
+    width:30%;
+}
+
+form * {
+    display: block;
+    width: 100%;
+    padding: 7px 0;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+#allCakes {
+    width: 60%;
+}
+
+#cakeCreate {
+    margin-right: 20px;
+}
+
+.cake {
+    margin-bottom: 15px;
+}

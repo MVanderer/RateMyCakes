@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img {
+    max-height: 240px;
+}
+
+.left, .right {
+    width:45%;
+    display: inline-block;
+}
+
+.left{
+    margin-right: 1%;
+}
+
+.right * {
+    font-size: 100%;
+}

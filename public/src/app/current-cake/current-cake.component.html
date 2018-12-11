@@ -1,0 +1,16 @@
+<div id="cakeDetails" *ngIf="cakeToShow">
+
+  <h3>{{cakeToShow.name}}</h3>
+  <div class="left">
+    <h4>Baked by {{cakeToShow.baker}}</h4>
+    <img src="{{cakeToShow.url}}" alt="">
+  </div>
+  <div class="right">
+    <h5>Average rating: {{averageRating}}</h5>
+    <div class="rating" *ngFor="let rating of cakeToShow.ratings">
+      <h5>{{rating.author}}</h5>
+      <p>{{rating.rating}}</p>
+      <p>{{rating.comment}}</p>
+    </div>
+  </div>
+</div>

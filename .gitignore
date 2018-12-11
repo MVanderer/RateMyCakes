@@ -1,0 +1,3 @@
+# Ignore modules to save up on space
+node_modules/
+public/node_modules/

@@ -1,0 +1,13 @@
+<img src="{{cake.url}}" alt="{{cake.name}}" (click)="showCake()">
+<form (submit)=makeComment(cake._id)>
+  <input type="text" name="newComment.author" [(ngModel)]="newComment.author" placeholder="Author">
+  <select name="newComment.rating" [(ngModel)]="newComment.rating">
+    <option value="5">5 stars</option>
+    <option value="4">4 stars</option>
+    <option value="3">3 stars</option>
+    <option value="2">2 stars</option>
+    <option value="1">1 star</option>
+  </select>
+  <textarea name="newComment.comment" [(ngModel)]="newComment.comment" cols="30" rows="7" style="resize: none"></textarea>
+  <input type="submit" value="Comment">
+</form>
